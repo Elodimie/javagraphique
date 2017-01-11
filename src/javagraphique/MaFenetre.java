@@ -1,15 +1,29 @@
 package javagraphique;
 
+import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 public class MaFenetre extends JFrame implements MouseListener {
 
 	public MaFenetre (){
-		super("Une fenêtre qui traite les clics souris");
-		setSize (300, 200);
+		super("La jolie fenêtre");
+		setSize (500, 500);
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		JPanel t = new JPanel();
+		this.setContentPane(t);
+		t.setSize(400,400);
+		
+		MonBouton bouton1 = new MonBouton("COUCOU");
+		
+		t.add(bouton1);
+		
+		bouton1.setVisible(true);
 		setVisible(true);
 		
 		addMouseListener(this);
@@ -19,17 +33,16 @@ public class MaFenetre extends JFrame implements MouseListener {
 	public void mouseClicked(MouseEvent e) {
 		int x = e.getX();
 		int y = e.getY();
-		
 		System.out.println("clic dans la fenêtre au point de coordonnées " + x + ", " + y);
 		
 	}
-
-	@Override
+	
 	public void mouseEntered(MouseEvent e) {
 	}
 
-	@Override
 	public void mouseExited(MouseEvent e) {
+		
+		
 	}
 
 	@Override
