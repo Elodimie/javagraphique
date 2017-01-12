@@ -89,13 +89,15 @@ public class Calculette extends JFrame {
 		this.setVisible(true);
 
 	}
-	
-	class ChiffreListener implements ActionListener {
 
+        
+	class ChiffreListener implements ActionListener {
+	        
+ 
 		public void actionPerformed(ActionEvent e) {
 			if (!text1.getText().equals("0.0")) 
 			{
-				text1.setText(text1.getText() + numberButtonAction);
+				text1.setText(text1.getText() + ?????????);
 			} else 
 			{
 				text1.setText("");

@@ -4,10 +4,10 @@ public class Main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Calculette essai = new Calculette();
-   
+		
 
-
+		JMenuBar1 essai = new JMenuBar1();
+	
 	}
 
 }
